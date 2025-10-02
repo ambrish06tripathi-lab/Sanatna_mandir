@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Welcome 🙏</h2>
+<p>ॐ नमः शिवाय | जय श्री राम | हर हर महादेव</p>
+
+{% if aarti %}
+<h3>📿 Today's Aarti: {{ aarti.title }}</h3>
+<p>{{ aarti.text }}</p>
+{% else %}
+<p>No Aarti uploaded yet.</p>
+{% endif %}
+{% endblock %}
