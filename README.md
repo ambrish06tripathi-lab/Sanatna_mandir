@@ -1,2 +1,3 @@
-# Sanatna_mandir
-Sanatna dharma mandir website 
+Flask
+Flask_SQLAlchemy
+gunicorn
