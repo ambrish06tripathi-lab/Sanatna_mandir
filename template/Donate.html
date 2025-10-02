@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>🙏 Online Donation (Demo)</h2>
+<form method="POST">
+<input type="text" name="name" placeholder="Your Name" required><br><br>
+<input type="email" name="email" placeholder="Your Email" required><br><br>
+<input type="number" step="0.01" name="amount" placeholder="Donation Amount (₹)" required><br><br>
+<button type="submit">Donate</button>
+</form>
+<p><i>Note: This is a demo version. No real transaction happens.</i></p>
+{% endblock %}
