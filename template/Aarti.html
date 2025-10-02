@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>📿 Upload Daily Aarti</h2>
+<form method="POST">
+<input type="text" name="title" placeholder="Aarti Title" required><br><br>
+<textarea name="text" placeholder="Paste Aarti Text" required></textarea><br><br>
+<button type="submit">Upload</button>
+</form>
+{% endblock %}
