@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>🔍 Mantras & Stotras</h2>
+<form method="POST">
+  <input type="text" name="query" placeholder="Search mantra or deity">
+  <button type="submit">Search</button>
+</form>
+<hr>
+{% for m in results %}
+<h3>{{ m.title }} ({{ m.deity }})</h3>
+<p>{{ m.text }}</p>
+<hr>
+{% endfor %}
+{% endblock %}
